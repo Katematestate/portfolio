@@ -17,6 +17,6 @@ import CV from '@/assets/logo.svg';
       <span>Instagram</span>
       <span>LinkedIn</span>
     </div>
-    
+
   </section>
 </template>

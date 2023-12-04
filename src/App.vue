@@ -1,14 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Logo from '@/assets/logo.svg';
+import Logo from '@/assets/katelogo.svg';
 </script>
 
 <template>
   <div class="root">
     <header>
-      <img :src="Logo" alt="" width="60">
-      <span>Katie Pragg</span>
-      <button>Contact</button>
+      <img :src="Logo" alt="" width="100">
+        <button>Contact</button>
     </header>
 
     <aside>
@@ -18,6 +17,10 @@ import Logo from '@/assets/logo.svg';
         <RouterLink to="/projects">Projects</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
+
+      <div class="social-media">
+
+      </div>
     </aside>
 
     <main>
@@ -30,21 +33,24 @@ import Logo from '@/assets/logo.svg';
 .root {
   display: grid;
   grid-template-columns: 100px 1fr;
-  grid-template-rows: 70px 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 header {
-  grid-column: 2;
-  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #fcf4a3;
 }
 
 aside {
   grid-column: 1;
   grid-row: 1/span 2;
-  background-color: pink;
+  background-color: #ffc30b;
 }
 
 main {
-  background-color: aquamarine;
+  background-color: #fafafa;
 }
 </style>

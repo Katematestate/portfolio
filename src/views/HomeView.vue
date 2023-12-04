@@ -33,6 +33,9 @@ import Portrait from '@/assets/logo.svg';
     </section>
   </div>
 
-  
 </template>
+
+<style scoped>
+
+</style>
 
